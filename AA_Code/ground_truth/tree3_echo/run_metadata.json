@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-07-25T21:19:17.281980",
+  "parameters": {
+    "sequences": "sequences.fasta",
+    "airr": "vquest_airr.tsv",
+    "pssm_mode": "nucleotide",
+    "pssm_scoring": "logodds",
+    "background": "observed",
+    "clones": 1,
+    "max_gen": 30,
+    "min_seq": 200,
+    "output_dir": "ground_truth\\tree3_echo",
+    "plot_tree": true,
+    "verbose": true
+  },
+  "stats": {
+    "naive_affinity": 0.9540775861221727,
+    "mean_affinity": 0.9469018738577846,
+    "median_affinity": 0.9471534967356179,
+    "max_affinity": 0.9546686249451755,
+    "min_affinity": 0.9372312663412354,
+    "mean_abundance": 1.291005291005291,
+    "max_abundance": 13,
+    "min_abundance": 0,
+    "total_abundance": 488,
+    "max_generation": 9,
+    "num_bcrs": 378,
+    "num_unique_sequences": 378
+  },
+  "available_repertoire_stat": {
+    "naive_affinity": 0.9540775861221727,
+    "mean_affinity": 0.9467343994921039,
+    "median_affinity": 0.9468345697044076,
+    "max_affinity": 0.9546686249451755,
+    "min_affinity": 0.9372312663412354,
+    "mean_abundance": 1.4437869822485208,
+    "max_abundance": 13,
+    "min_abundance": 1,
+    "total_abundance": 488,
+    "max_generation": 9,
+    "num_bcrs": 338,
+    "num_unique_sequences": 338
+  },
+  "success": true
+}
