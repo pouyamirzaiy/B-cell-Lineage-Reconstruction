@@ -1,0 +1,20 @@
+
+                                                                                                    /-seq4946@578
+                                                                /seq1442seq11859seq917seq9041seq11600
+                                   /seq9706seq1012seq4549seq25555                                   \seq2852seq426-seq6494@145
+                                  |                            |
+               /seq5990seq94681seq54                            \seq3658-seq13941@111
+              |                   |
+              |                   |             /seq10916-seq1333@35
+              |                    \seq282seq1186
+              |                                |                                   /-seq13119@87
+              |                                 \seq1947seq3788seq238seq2956seq76859
+        /seq3739                                                                   \seq13028-seq2142@54
+       |      |
+       |      |       /-seq8334@170
+       |      |-seq6231
+-- /naive     |       \-seq13648@59
+       |      |
+       |       \seq3328seq1535seq1011seq3398-seq906@120
+       |
+        \-seq8909@31
