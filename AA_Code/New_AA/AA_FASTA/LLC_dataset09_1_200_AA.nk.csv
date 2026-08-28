@@ -1,0 +1,10 @@
+naive,seq194,0.0
+naive,seq75,1.0
+seq194,None1,0.1
+None1,seq3717,0.9
+None1,seq5297,0.9
+None1,seq76164,0.9
+seq75,seq5071,1.0
+seq75,seq824,1.0
+seq75,seq13905,4.0
+seq75,seq2724,8.0
