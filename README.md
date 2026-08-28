@@ -138,7 +138,7 @@ Future work will focus on:
 
 ## Author
 
-Pouya Mirzaeizadeh
+Pouya Mirzaeizadeh & Shadi Sefidgar
 
 ---
 
