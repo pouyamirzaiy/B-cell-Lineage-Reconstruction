@@ -1,13 +1,12 @@
+
 ## Tree Reconstruction Evaluation
 
-### Precision, Recall, and F1-Score
+### Precision, Recall, and F-measure
 
-The reconstructed trees were evaluated against their corresponding ground-truth trees using edge-based Precision, Recall, and F1-score (F-measure).
+The reconstructed trees were evaluated against their corresponding ground-truth trees using edge-based Precision, Recall, and F-measure (F1-score).
 
-An edge is considered correct if it appears in both the reconstructed and ground-truth trees.
-
-| Tree | Total Edges | Common Edges (TP) | False Positives (FP) | False Negatives (FN) | Precision | Recall | F1-Score |
-|------|-------------|-------------------|----------------------|----------------------|-----------|--------|----------|
+| Tree | Total Edges | Common Edges (TP) | False Positives (FP) | False Negatives (FN) | Precision | Recall | F-measure |
+|------|-------------|-------------------|----------------------|----------------------|-----------|--------|-----------|
 | Tree 1 | 46 | 45 | 1 | 1 | 0.9783 | 0.9783 | 0.9783 |
 | Tree 2 | 82 | 77 | 5 | 5 | 0.9390 | 0.9390 | 0.9390 |
 | Tree 3 | 337 | 309 | 28 | 28 | 0.9169 | 0.9169 | 0.9169 |
@@ -15,20 +14,17 @@ An edge is considered correct if it appears in both the reconstructed and ground
 
 ### Edge-Level Differences
 
-The following sections summarize the edges that differ between each reconstructed tree and its ground truth.
+Extra edges (False Positives) are present in the reconstructed tree but absent from the ground truth. Missing edges (False Negatives) are present in the ground truth but absent from the reconstructed tree.
 
-- **Extra edges (FP):** Edges present in the reconstructed tree but absent from the ground truth.
-- **Missing edges (FN):** Edges present in the ground truth but absent from the reconstructed tree.
+#### Tree 1 — F-measure: 0.9783
 
-#### Tree 1 — F1-Score: 0.9783
-
-**Extra edge (1):**
+**Extra edges (1):**
 - `seq87 — seq88`
 
-**Missing edge (1):**
+**Missing edges (1):**
 - `seq1 — seq88`
 
-#### Tree 2 — F1-Score: 0.9390
+#### Tree 2 — F-measure: 0.9390
 
 **Extra edges (5):**
 - `seq17 — seq18`
@@ -44,9 +40,9 @@ The following sections summarize the edges that differ between each reconstructe
 - `seq192 — seq50`
 - `seq223 — seq6`
 
-#### Tree 3 — F1-Score: 0.9169
+#### Tree 3 — F-measure: 0.9169
 
-**Extra edges (28; first 10 shown):**
+**Extra edges (28, first 10 shown):**
 - `seq15 — seq16`
 - `seq150 — seq38`
 - `seq151 — seq38`
@@ -60,7 +56,7 @@ The following sections summarize the edges that differ between each reconstructe
 
 *18 additional extra edges omitted.*
 
-**Missing edges (28; first 10 shown):**
+**Missing edges (28, first 10 shown):**
 - `naive — seq444`
 - `seq105 — seq418`
 - `seq11 — seq193`
@@ -74,21 +70,21 @@ The following sections summarize the edges that differ between each reconstructe
 
 *18 additional missing edges omitted.*
 
-#### Tree 4 — F1-Score: 0.9688
+#### Tree 4 — F-measure: 0.9688
 
-**Extra edge (1):**
+**Extra edges (1):**
 - `seq155 — seq156`
 
-**Missing edge (1):**
+**Missing edges (1):**
 - `naive — seq156`
 
-### Summary
+### Results Summary
 
-The reconstructed trees demonstrate high edge-level agreement with their corresponding ground truths, achieving F1-scores ranging from **0.9169 to 0.9783**.
+All four reconstructed trees achieved F-measures above 0.91, indicating strong agreement with their corresponding ground-truth trees.
 
-- **Tree 1** achieves the highest F1-score (0.9783), with only one incorrect and one missing edge.
-- **Tree 4** achieves an F1-score of 0.9688, also differing by only one extra and one missing edge.
-- **Tree 2** achieves an F1-score of 0.9390, with five extra and five missing edges.
-- **Tree 3** achieves the lowest F1-score (0.9169), with 28 extra and 28 missing edges.
+- **Tree 1:** Highest F-measure (0.9783), with 1 false positive and 1 false negative.
+- **Tree 2:** F-measure of 0.9390, with 5 false positives and 5 false negatives.
+- **Tree 3:** F-measure of 0.9169, with 28 false positives and 28 false negatives.
+- **Tree 4:** F-measure of 0.9688, with 1 false positive and 1 false negative.
 
-Overall, the results indicate strong reconstruction accuracy across all four trees, with relatively few edge-level discrepancies compared to the total number of edges.
+Overall, the reconstructed trees show high edge-level accuracy, with relatively few discrepancies compared to the total number of edges.
