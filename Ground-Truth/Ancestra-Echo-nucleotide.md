@@ -2,14 +2,6 @@
 
 Comparison of reconstructed nucleotide trees with their corresponding ground-truth trees. The figures and tree metadata are taken from the original Ancestra-Echo nucleotide document.
 
-## Ground-Truth Tree Statistics
-
-| Tree | Nodes | Unique Sequences | Depth (Generations) | Total Abundance | Maximum Node Abundance | Maximum Allowed Generations | Minimum Requested Sequences | PSSM Mode |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Tree 1 | 53 | 53 | 6 | 62 | 8 | 25 | 30 | Nucleotide |
-| Tree 2 | 94 | 94 | 7 | 114 | 6 | 22 | 80 | Nucleotide |
-| Tree 3 | 378 | 378 | 9 | 488 | 13 | 30 | 200 | Nucleotide |
-| Tree 4 | 36 | 36 | 6 | 50 | 4 | 10 | 25 | Nucleotide |
 
 ## Reconstructed Trees vs. Ground Truth
 
